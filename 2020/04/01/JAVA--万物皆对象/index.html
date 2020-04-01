@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="zh-CN">
 
 
 <head>
@@ -55,7 +55,7 @@
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
-      <span>Index</span>
+      <span>首页</span>
     </a>
     
   </li>
@@ -66,7 +66,7 @@
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
       
-      <span>Tags</span>
+      <span>标签</span>
     </a>
     
   </li>
@@ -77,7 +77,7 @@
       
       <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
       
-      <span>Categories</span>
+      <span>分类</span>
     </a>
     
   </li>
@@ -88,7 +88,7 @@
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
-      <span>Archives</span>
+      <span>归档</span>
     </a>
     
   </li>
@@ -99,7 +99,7 @@
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
-      <span>About</span>
+      <span>关于</span>
     </a>
     
   </li>
@@ -110,7 +110,7 @@
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
-      <span>Contact</span>
+      <span>留言板</span>
     </a>
     
   </li>
@@ -121,14 +121,14 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>Friends</span>
+      <span>友情链接</span>
     </a>
     
   </li>
   
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
 </ul>
@@ -157,7 +157,7 @@
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
-			Index
+			首页
 		</a>
           
         </li>
@@ -168,7 +168,7 @@
 			
 			    <i class="fa-fw fas fa-tags"></i>
 			
-			Tags
+			标签
 		</a>
           
         </li>
@@ -179,7 +179,7 @@
 			
 			    <i class="fa-fw fas fa-bookmark"></i>
 			
-			Categories
+			分类
 		</a>
           
         </li>
@@ -190,7 +190,7 @@
 			
 			    <i class="fa-fw fas fa-archive"></i>
 			
-			Archives
+			归档
 		</a>
           
         </li>
@@ -201,7 +201,7 @@
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
-			About
+			关于
 		</a>
           
         </li>
@@ -212,7 +212,7 @@
 			
 			    <i class="fa-fw fas fa-comments"></i>
 			
-			Contact
+			留言板
 		</a>
           
         </li>
@@ -223,7 +223,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			Friends
+			友情链接
 		</a>
           
         </li>
@@ -435,7 +435,7 @@
                 <div class="col s7">
                     
                           <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            <span class="chip bg-color">无标签</span>
                           </div>
                     
                 </div>
@@ -447,7 +447,7 @@
             <div class="post-info">
                 
                 <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
                     2020-04-01
                 </div>
                 
@@ -503,7 +503,7 @@
 <p>然后又有了这样一句代码：<br>Person p2 = p;</p>
 <p>这句代码的含义是：<br>创建了一个新的引用，保存在栈中，引用的地址也指向Person的地址。这个时候，你通过p2来改变Person对象的状态，也会改变p的结果。因为它们指向同一个对象。（String除外，之后会专门讲String）</p>
 <p>此时，内存中是这样的：</p>
-<p><img src="F:%5CS1mple%5Cblog%5Csource_posts%5Cimage%5C12313123142145523.png" alt=""></p>
+<p><img src="/images/111.png" alt></p>
 <p>用一种很通俗的方式来讲解一下引用和对象。</p>
 <p>大家都应该用过windows吧。win有一个神奇的东西叫做快捷方式。我们桌面的图标大部分都是快捷方式。它并不是我们安装在电脑上的应用的可执行文件（不是.exe文件)，那么为什么点击它可以打开应用程序呢？这个我不用讲了把。</p>
 <p>我们的对象和引用就和快捷方式和它连接的文件一样。</p>
@@ -524,13 +524,11 @@
 <p> 但是，用new操作符创建的对象是不同的，也就是说，此时，i和j指向不同的内存地址。因为每次调用new操作符，都会在堆开辟新的空间。 </p>
 <p>当然，说到基本数据类型，不得不提一下java的经典设计。</p>
 <p>先看一段代码：</p>
-<blockquote>
-<p><img src="F:%5CS1mple%5Cblog%5Csource_posts%5Cimage%5CU21HXN9O2GTAVIA0OLD$SGT.png" alt=""></p>
-</blockquote>
-<p>为什么一个是true一个是false呢？</p>
+<p><img src="/images/333.png" alt></p>
+<p>为什么一个是true一个是false呢？!</p>
 <p>我就不讲了，应该都知道吧。我就贴一个Integer的源码（jdk1.8）吧。</p>
 <blockquote>
-<p><img src="F:%5CS1mple%5Cblog%5Csource_posts%5Cimage%5C20161127213328205.png" alt=""></p>
+<p><img src="/images/222.png" alt></p>
 <p> Integer 类的内部定义了一个内部类，缓存了从-128到127的所有数字，所以，你懂得。 </p>
 </blockquote>
 <p>————————————————</p>
@@ -546,7 +544,7 @@
             <div class="reprint__author">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-user">
-                        Author:
+                        文章作者:
                     </i>
                 </span>
                 <span class="reprint-info">
@@ -556,7 +554,7 @@
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
-                        Link:
+                        文章链接:
                     </i>
                 </span>
                 <span class="reprint-info">
@@ -566,13 +564,13 @@
             <div class="reprint__notice">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-copyright">
-                        Reprint policy:
+                        版权声明:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    All articles in this blog are used except for special statements
+                    本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    reprint polocy. If reproduced, please indicate source
+                    许可协议。转载请注明来源
                     <a href="http://yoursite.com" target="_blank">John Doe</a>
                     !
                 </span>
@@ -582,7 +580,7 @@
 
     <script async defer>
       document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
         M.toast({html: toastHTML})
       });
 
@@ -597,7 +595,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -761,30 +759,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/04/01/JAVA--%E4%B8%87%E7%89%A9%E7%9A%86%E5%AF%B9%E8%B1%A1/">
+                <a href="/2020/04/01/%E5%B0%8F%E6%B6%B5%E6%B6%B5/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="JAVA--万物皆对象">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="小涵涵">
                         
-                        <span class="card-title">JAVA--万物皆对象</span>
+                        <span class="card-title">小涵涵</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            重新认识JAVA (一) —- 万物皆对象对象，引用，类与现实世界现实世界里有许许多多的生物，非生物，跑的跳的飞的，过去的现在的未来的，令人眼花缭乱。我们编程的目的，就是解决现实生活中的问题。所以不可避免的我们要和现实世界中各种奇怪的东西打
+                            ​                                                                 猪猪侠🐷
+ 从你风华正茂，到你的垂垂老矣，岁月让容颜变迁，但我对的你的热情从未有丝毫减少。爱你很久很久，久
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-01
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-01
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -793,7 +791,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -801,7 +798,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/04/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
@@ -878,7 +875,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
             <div id="toc-content"></div>
         </div>
     </div>
@@ -1096,8 +1093,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
                    class="search-input">
         </div>
         <div id="searchResult"></div>
