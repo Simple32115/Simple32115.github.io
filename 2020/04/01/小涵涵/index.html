@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JAVA--万物皆对象, Hexo">
+    <meta name="keywords" content="小涵涵, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JAVA--万物皆对象 | Hexo</title>
+    <title>小涵涵 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -306,12 +306,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JAVA--万物皆对象</h1>
+                    <h1 class="description center-align post-title">小涵涵</h1>
                 </div>
             </div>
         </div>
@@ -465,74 +465,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="重新认识JAVA-一-—-万物皆对象"><a href="#重新认识JAVA-一-—-万物皆对象" class="headerlink" title="重新认识JAVA (一) —- 万物皆对象"></a>重新认识JAVA (一) —- 万物皆对象</h1><h2 id="对象，引用，类与现实世界"><a href="#对象，引用，类与现实世界" class="headerlink" title="对象，引用，类与现实世界"></a>对象，引用，类与现实世界</h2><p>现实世界里有许许多多的生物，非生物，跑的跳的飞的，过去的现在的未来的，令人眼花缭乱。我们编程的目的，就是解决现实生活中的问题。所以不可避免的我们要和现实世界中各种奇怪的东西打交道。</p>
-<p>在现实世界里，你新认识了一个朋友，你知道他长什么样，知道了他的名字年龄，地址。知道他喜欢干什么有什么特长。你想用java语言描述一下这个人，你应该怎么做呢？</p>
-<p>这个时候，就有了类的概念。每一个类对应现实世界中的某一事物。比如现实世界中有人。那么我们就创建一个关于“人”的类。</p>
-<p>每一个人都有名字，都有地址等等个人信息。那么我们就在“人”的类里面添加这些属性。</p>
-<p>每一个人都会吃，会走路，那么我们就在“人”的类里面添加吃和走的方法。</p>
-<p>当这个世界又迎来了一个新生命，我们就可以“new”一个“人”，“new”出来的就叫”对象“。</p>
-<p>每一个人一出生，父母就会给他取个名字。在程序里，我们需要用一种方式来操作这个“对象”，于是，就出现了引用。我们通过引用来操作对象，设置对象的属性，操作对象的方法。</p>
-<p>这就是最基本的面向对象。</p>
-<p> 【 <strong>现实世界的事物</strong>】 —抽象—&gt; 【<strong>类</strong> 】—new—&gt;【<strong>对象</strong> 】&lt;—控制— 【<strong>引用</strong>】 </p>
-<h3 id="从创建一个对象开始"><a href="#从创建一个对象开始" class="headerlink" title="从创建一个对象开始"></a>从创建一个对象开始</h3><p>创建对象的前提是先得有一个类。我们先自己创建一个person类。</p>
-<p>//Person类<br>public class Person {<br>    private String name;<br>    private int age;</p>
-<pre><code>public void eat(){
-    System.out.println(&quot;i am eating&quot;);
-}</code></pre><p>}</p>
-<p>创建一个Person对象</p>
-<p>Person p = new Person();</p>
-<ul>
-<li><p><strong>new Person</strong> :一个Person类型的对象</p>
-</li>
-<li><p><strong>()</strong> : 这个括号相当于调用了person的无参构造方法</p>
-</li>
-<li><p><strong>p</strong> ： Person对象的引用</p>
-</li>
-</ul>
-<p> 有的人会认为p就是new出来的Person对象。这是错误的理解，p只是一个Person对象的引用而已。那么问题来了，什么是引用？什么又是对象呢？这个要从内存说起 。</p>
-<p>创建对象的过程<br>java大体上会把内存分为四块区域：堆，栈，静态区，常量区。</p>
-<p>堆 ： 位于RAM中，用于存放所有的java对象。<br>栈 ： 位于RAM中，引用就存在于栈中。<br>静态区 : 位于RAM中，被static修饰符修饰的变量会被放在这里<br>常量区 ：位于ROM中， 很明显，放常量的。</p>
-<blockquote>
-<p> 事实上，我们不需要关心java的对象，变量到底存在了哪里，因为jvm会帮我们处理好这些。但是理解了这些，有助于提高我们的水平。 </p>
-</blockquote>
-<p>当执行这句代码的时候。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Person p = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure>
-
-<p>首先，会在堆中开辟一块空间存放这个新来的Person对象。然后，会创建一个引用p，存放在栈中，这个引用p指向Person对象（事实上是，p的值就是Person对象的内存地址）。</p>
-<p>这样，我们通过访问p，然后得到了Person的内存地址，进而找到了Person对象。</p>
-<p>然后又有了这样一句代码：<br>Person p2 = p;</p>
-<p>这句代码的含义是：<br>创建了一个新的引用，保存在栈中，引用的地址也指向Person的地址。这个时候，你通过p2来改变Person对象的状态，也会改变p的结果。因为它们指向同一个对象。（String除外，之后会专门讲String）</p>
-<p>此时，内存中是这样的：</p>
-<p><img src="/images/111.png" alt></p>
-<p>用一种很通俗的方式来讲解一下引用和对象。</p>
-<p>大家都应该用过windows吧。win有一个神奇的东西叫做快捷方式。我们桌面的图标大部分都是快捷方式。它并不是我们安装在电脑上的应用的可执行文件（不是.exe文件)，那么为什么点击它可以打开应用程序呢？这个我不用讲了把。</p>
-<p>我们的对象和引用就和快捷方式和它连接的文件一样。</p>
-<p>我们不直接对文件进行操作，而是通过快捷方式来进行操作。快捷方式不能独立存在，同样，引用也不能独立存在（你可以只创建一个引用，但是当你要使用它的时候必须得给它赋值，否则它将毫无用处）。</p>
-<p>一个文件可以有多个快捷方式，同样一个对象也可以有多个引用。而一个引用只能同时对应一个对象。</p>
-<blockquote>
-<p>在java里，“=”不能被看成是一个赋值语句，它不是在把一个对象赋给另外一个对象，它的执行过程实质上是将右边对象的地址传给了左边的引用，使得左边的引用指向了右边的对象。java表面上看起来没有指针，但它的引用其实质就是一个指针。在java里，“=”语句不应该被翻译成赋值语句，因为它所执行的确实不是一个简单的赋值过程，而是一个传地址的过程，被译成赋值语句会造成很多误解，译得不准确。<br>特例：基本数据类型<br>为什么会有特例呢？因为用new操作符创建的对象会存在堆里，二在堆里开辟空间等行为效率较操作栈要低。而我们平时写代码的时候会经常创建一些“小变量”，比如int i = 1；如果每次都用Interger来new一个，效率不是很高而且浪费内存。</p>
-</blockquote>
-<p>所以针对这些情况，java提供了“基本数据类型”，基本数据类型一共有八种，每一个基本数据类型存放在栈中，而他们的值存放在常量区中。</p>
-<p>举个例子：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">int</span> j = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<p>我们需要知道的是，在常量区中，相同的常量只会存在一个。当执行第一句代码时。先查找常量区中有没有2，没有，则开辟一个空间存放2，然后在栈中存入一个变量i，让i指向2；</p>
-<p>执行第二句的时候，查找发现2已经存在了，所以就不开辟新空间了。直接在栈中保存一个新变量j，让j指向2；</p>
-<p>当然，java堆每一个基本数据类型都提供了对应的包装类。我们依旧可以用new操作符来创建我们想要的变量。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i = <span class="keyword">new</span> Integer(<span class="number">1</span>);</span><br><span class="line">Integer j = <span class="keyword">new</span> Integer(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
-
-<p> 但是，用new操作符创建的对象是不同的，也就是说，此时，i和j指向不同的内存地址。因为每次调用new操作符，都会在堆开辟新的空间。 </p>
-<p>当然，说到基本数据类型，不得不提一下java的经典设计。</p>
-<p>先看一段代码：</p>
-<p><img src="/images/333.png" alt></p>
-<p>为什么一个是true一个是false呢？!</p>
-<p>我就不讲了，应该都知道吧。我就贴一个Integer的源码（jdk1.8）吧。</p>
-<blockquote>
-<p><img src="/images/222.png" alt></p>
-<p> Integer 类的内部定义了一个内部类，缓存了从-128到127的所有数字，所以，你懂得。 </p>
-</blockquote>
-<p>————————————————</p>
-<p>版权声明：本文为CSDN博主「Sharember」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/qq_31655965/java/article/details/53365564" target="_blank" rel="noopener">https://blog.csdn.net/qq_31655965/java/article/details/53365564</a></p>
+                <pre><code>猪猪侠🐷</code></pre><p> 从你风华正茂，到你的垂垂老矣，岁月让容颜变迁，但我对的你的热情从未有丝毫减少。爱你很久很久，久到一生只够爱一个人。   永远爱你呦宝贝!</p>
+<p><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1649777932,446696163&fm=26&gp=0.jpg" alt></p>
 
             </div>
             <hr/>
@@ -558,7 +492,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/04/01/JAVA--%E4%B8%87%E7%89%A9%E7%9A%86%E5%AF%B9%E8%B1%A1/">http://yoursite.com/2020/04/01/JAVA--%E4%B8%87%E7%89%A9%E7%9A%86%E5%AF%B9%E8%B1%A1/</a>
+                    <a href="http://yoursite.com/2020/04/01/%E5%B0%8F%E6%B6%B5%E6%B6%B5/">http://yoursite.com/2020/04/01/%E5%B0%8F%E6%B6%B5%E6%B6%B5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -763,26 +697,28 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/04/01/%E5%B0%8F%E6%B6%B5%E6%B6%B5/">
+                <a href="/2020/04/04/@RequestParam%E6%B3%A8%E8%A7%A3%E4%BD%BF%E7%94%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="小涵涵">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="@RequestParam注解使用">
                         
-                        <span class="card-title">小涵涵</span>
+                        <span class="card-title">@RequestParam注解使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            猪猪侠🐷 从你风华正茂，到你的垂垂老矣，岁月让容颜变迁，但我对的你的热情从未有丝毫减少。爱你很久很久，久到一生只够爱一个人。   永远爱你呦宝贝!
+                            @RequestParam注解使用1、作用：
+1@RequestParam：将请求参数绑定到你控制器的方法参数上（是springmvc中接收普通参数的注解）
 
-
+2、语法：
+1234567语法：@RequestParam(value&#x3D
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-01
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-04
                         </span>
                         <span class="publish-author">
                             
@@ -802,27 +738,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
+                <a href="/2020/04/01/JAVA--%E4%B8%87%E7%89%A9%E7%9A%86%E5%AF%B9%E8%B1%A1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="我的第一篇博客文章">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="JAVA--万物皆对象">
                         
-                        <span class="card-title">我的第一篇博客文章</span>
+                        <span class="card-title">JAVA--万物皆对象</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ​                                    ##第一章
-内容
-
-###第二章
-内容
-
-参考文献
-www.codesheep.cn
-
+                            重新认识JAVA (一) —- 万物皆对象对象，引用，类与现实世界现实世界里有许许多多的生物，非生物，跑的跳的飞的，过去的现在的未来的，令人眼花缭乱。我们编程的目的，就是解决现实生活中的问题。所以不可避免的我们要和现实世界中各种奇怪的东西打
                         
                     </div>
                     <div class="publish-info">
